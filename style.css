@@ -1,0 +1,120 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Light theme background */
+    color: #333; /* Light theme text color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Ensure full height */
+}
+
+header {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.container {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px; /* Limit width for larger screens */
+    width: 100%; /* Responsive width */
+}
+
+label {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+#imageSelector {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff; /* Light theme select */
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: 100%; /* Full width */
+}
+
+canvas {
+    border: 2px solid #4CAF50; /* Green border around canvas */
+    margin-bottom: 20px;
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 500px; /* Limit width */
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    background-color: #4CAF50; /* Green button */
+    color: white; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+footer {
+    margin-top: auto; /* Pushes footer to bottom */
+    padding: 10px;
+    background-color: #4CAF50; /* Green footer */
+    color: white; /* Footer text color */
+    text-align: center;
+    width: 100%;
+}
+
+/* Dark Theme Styles */
+body.dark-theme {
+    background-color: #333; /* Dark theme background */
+    color: #fff; /* Dark theme text color */
+}
+
+body.dark-theme header,
+body.dark-theme footer {
+    background-color: #555; /* Darker background for header and footer */
+}
+
+body.dark-theme #imageSelector {
+    background-color: #444; /* Dark theme select background */
+    color: #fff; /* Dark theme select text color */
+}
+
+body.dark-theme button {
+    background-color: #666; /* Dark theme button background */
+}
+
+body.dark-theme button:hover {
+    background-color: #777; /* Darker button on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    canvas {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+
+    button {
+        width: 100%; /* Full width for buttons */
+    }
+}

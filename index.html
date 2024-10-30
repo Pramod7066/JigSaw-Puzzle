@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jigsaw Puzzle Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Jigsaw Puzzle Game</h1>
+        
+        <label for="imageSelector">Choose an image:</label>
+        <select id="imageSelector">
+            <option value="assets/images/puzzle1.jpg">Image 1</option>
+            <option value="assets/images/puzzle2.jpg">Image 2</option>
+            <option value="assets/images/puzzle3.jpg">Image 3</option>
+            <option value="assets/images/puzzle4.jpg">Image 4</option>
+            <option value="assets/images/puzzle5.jpg">Image 5</option>
+            <option value="assets/images/puzzle6.jpg">Image 6</option>
+            <option value="assets/images/puzzle7.jpg">Image 7</option>
+            <option value="assets/images/puzzle8.jpg">Image 8</option>
+            <option value="assets/images/puzzle9.jpg">Image 9</option>
+            <option value="assets/images/puzzle10.jpg">Image 10</option>
+            <option value="assets/images/puzzle11.jpg">Image 11</option>
+            <option value="assets/images/puzzle12.jpg">Image 12</option>
+            <option value="assets/images/puzzle13.jpg">Image 13</option>
+            <option value="assets/images/puzzle14.jpg">Image 14</option>
+            <option value="assets/images/puzzle15.jpg">Image 15</option>
+            <option value="assets/images/puzzle16.jpg">Image 16</option>
+            <option value="assets/images/puzzle16.jpg">Image 17</option>
+        </select>
+
+        <audio id="moveSound" src="assets/sounds/move.mp3" preload="auto"></audio>
+        <audio id="bgMusic" src="assets/sounds/background-music.mp3" preload="auto" loop></audio>
+
+        
+        <canvas id="puzzleCanvas" width="500" height="500"></canvas>
+        <div class="controls">
+            
+            <div class="button-row">
+                <button id="shuffleBtn">Shuffle Pieces</button>
+                <button id="resetBtn">Reset Game</button><br>
+            </div><br>
+
+            <button id="themeToggle">Switch to Dark Theme</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Jigsaw Puzzle Game. All rights reserved.</p>
+        <p>Check our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+    </footer>
+
+    <!-- Audio Elements -->
+    <audio id="moveSound" src="assets/sounds/move.mp3" preload="auto"></audio>
+    <audio id="bgMusic" src="assets/sounds/background-music.mp3" preload="auto" loop></audio>
+
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
